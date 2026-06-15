@@ -3,23 +3,20 @@
 **Defensive Publication — June 2026**
 
 **The Problem**  
-All deployed CP-ABE schemes rely on bilinear pairings over elliptic curves. These are vulnerable to Shor’s algorithm on a cryptographically relevant quantum computer, creating harvest-now-decrypt-later risks for long-lived sensitive data such as genomic records.
-
-No practical NIST-standardized post-quantum CP-ABE exists today.
+Current CP-ABE systems rely on bilinear pairings over elliptic curves. These are vulnerable to Shor’s algorithm on a cryptographically relevant quantum computer, creating harvest-now-decrypt-later risks for long-lived sensitive data such as genomic records.
 
 **The Solution — Lizard**  
-Lizard-CP-ABE is a Ring-LWE-based post-quantum replacement that preserves the exact same expressive policy-driven access control as classical CP-ABE, while being hardware-native for efficient deployment in secure elements, FPGA, and ASIC (e.g. secure enclaves).
+Lizard-CP-ABE is a Ring-LWE-based post-quantum replacement that delivers the same expressive policy-based access control while being hardware-native and efficient on constrained cryptographic hardware (FPGA/ASIC/secure elements).
 
-It features:
-- Fractal + cellular automata policy engine for ultra-efficient hardware evaluation
-- Integrated mediator-aided revocation, puncturable forward security, and certified deletion
-- Designed for integration into cryptogenomic proof objects and constrained cryptographic hardware
+**Key Differentiator**  
+Fractal self-similarity + cellular automata + percolation for ultra-efficient policy evaluation directly in silicon.
+
+Additional capabilities include mediator-aided revocation, puncturable forward security, and certified deletion.
 
 **Purpose**  
-This repository provides public defensive publication of the Lizard-CP-ABE concept to establish prior art.
+Public defensive publication to establish prior art for a practical post-quantum CP-ABE construction.
 
-**Related Project**  
-[bDNA Protocol](https://github.com/shoel1215/bDNA-Protocol)
+See `Lizard_CP_ABE_Defensive_Publication.md` for full details.
 
 **License**: CC0 1.0  
 **Contact**: Shoel Lowy — lowy_s@blockchaindnafoundation.org
